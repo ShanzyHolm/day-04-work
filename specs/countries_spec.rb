@@ -34,11 +34,15 @@ class CountryTest < Minitest::Test
       assert_equal("Cardiff", result[:capital])
 
   end
-end
 
   def test_find_population()
 
     # Act
     total = total_population(@united_kingdom)
+    assert_equal(61368000, total)
 
   end
+
+  
+
+end

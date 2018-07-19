@@ -58,3 +58,11 @@ end
 #       population_total += country[:population]
 #     end
 # p population_total.to_s() + " is the total population of the UK."
+
+def total_population (countries)
+  total = 0
+  for country in countries
+    total += country[:population]
+  end
+  return total
+end
